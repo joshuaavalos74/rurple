@@ -1,8 +1,8 @@
-instruccioneses=[]
 def cargar_instrucciones(instruccion):
-	ins=open(instruccion)
+	instruccioneses=[]
+	ins=open(instruccion,"r")
 	for linea in ins:
-		h=list(linea.strip())
+		h=(linea.strip())
 		instruccioneses.append(h)
 	ins.close()	
 	return instruccioneses

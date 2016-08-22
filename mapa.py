@@ -1,9 +1,9 @@
-mapas=[]
 def cargar_mapas(mapa):
-	ma=open(mapa)	
+	mapas=[]
+	ma=open(mapa,"r")	
 	for linea in ma:
 		g=list(linea.strip())
 		mapas.append(g)
-	ma.close	
+	ma.close()	
 	return mapas
 	

@@ -1,8 +1,6 @@
-mapas=[]
-def cargar_mapas(mapa):
-	ma=open("mapas/mapa1.txt")	
-	for linea in ma:
-		g=list(linea.strip())
-		mapas.append(g)
-	return mapas
-	ma.close
+import instrucciones
+import mapa
+ins=input("")
+mui=input("")
+print (mapa.cargar_mapas(mui))
+print (instrucciones.cargar_instrucciones(ins))
