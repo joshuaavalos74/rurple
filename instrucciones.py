@@ -1,8 +1,9 @@
 instruccioneses=[]
 def cargar_instrucciones(instruccion):
-	ins=open("Instrucciones/instructions.txt")
+	ins=open(instruccion)
 	for linea in ins:
 		h=list(linea.strip())
 		instruccioneses.append(h)
+	ins.close()	
 	return instruccioneses
-	ins.close	
+		
