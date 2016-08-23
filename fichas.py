@@ -5,3 +5,5 @@ class Fichasas(object):
 		
 
 
+	def recoger_monedas(self):
+		self.puesto= True
