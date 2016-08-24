@@ -1,5 +1,11 @@
 class Robot():
-	def __init__(self, mover, girar):
+	def __init__(self, mover, girar, posicion):
 		self.mover= mover
-	def mover(self):
-		posicion= mapas[0]
+		self.posicion = posicion
+		posicion= mapas[0[0]]
+
+	def moverse(self):
+		
+
+
+		

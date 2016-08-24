@@ -6,4 +6,12 @@ class Fichasas(object):
 
 
 	def recoger_monedas(self):
-		self.puesto= True
+		if Robot.posicion== mapas[2[3]]:
+			self.puesto= True
+		elif Robot.posicion== mapas[16[45]:
+			self.puesto= True
+		elif Robot.posicion== mapas[40[8]:
+			self.puesto= True
+
+ 	
+				
