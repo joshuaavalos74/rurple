@@ -2,5 +2,6 @@ import instrucciones
 import mapa
 ins=input("")
 mui=input("")
-print (mapa.cargar_mapas(mui))
+mai="" .join(mui)
+print (mapa.cargar_mapas(mai))
 print (instrucciones.cargar_instrucciones(ins))

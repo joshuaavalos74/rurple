@@ -5,6 +5,9 @@ class Robot():
 		posicion= mapas[0[0]]
 
 	def moverse(self):
+		for i in mover:
+			
+
 		
 
 
