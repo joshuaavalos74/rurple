@@ -1,9 +1,10 @@
-def cargar_mapas(mapa):
-	mapas=[]
-	ma=open(mapa,"r")	
-	for linea in ma:
-		g=list(linea.strip())
-		mapas.append(g)
-	ma.close()	
-	return mapas
-	
+class Mapa(object):
+	def __init__(self, altura, ancho):
+		self.ancho=ancho
+		self.altura=alto
+		self.monedas=[]
+		self.robot=None
+		def crear_robot(self):
+			self.robot=robot
+		def agregar_monedas(self, monedasas):
+			self.monedas.append(monedasas)	
