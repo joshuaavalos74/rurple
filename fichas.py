@@ -1,7 +1,7 @@
 class Fichasas(object):
-	def __init__(self, lugar, puesto):
-		self.lugar = lugar
-		self.puesto= False
+	def __init__(self, x, y):
+		self.x = x
+		self.y = y
 		
 
 
