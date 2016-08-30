@@ -2,7 +2,7 @@ class Fichasas(object):
 	def __init__(self, x, y):
 		self.x = x
 		self.y = y
-		
+		se
 
 
 	def recoger_monedas(self):
