@@ -19,23 +19,38 @@ class Robot(object):
 		else:
 			self.direccion = "UP"
 
-	def dibujar(self):
+	def dibujar (self):
 		if self.direccion == 'UP':
 			return "^"
 		elif self.direccion == 'RIGHT':
-			return ""
+			return ">"
+		elif self.direccion == 'LEFT':
+			return "<"
+		else:
+			return "v"		
 
-	# def mover (self):
-	# 	if self.direccion == ">":
-	# 		self.x= x+1
-	# 	elif self.direccion == "UP":
-	# 		self.y = y+1
-	# 	elif self.direccion == "<":
-	# 		self.x = x-1
-	# 	elif self.direccion == "v":
-	# 		self.y = y-1	
+	 def mover (self):
+	 	if self.direccion == ">":
+	 		self.x += 1
+	 	elif self.direccion == "^":
+	 		self.y -= 1 
+	 	elif self.direccion == "<":
+	 		self.x -= 1
+	 	elif self.direccion == "v":
+			self.y += 1
 
-			
+	def agregar_monedas(self, moneda):
+		for i in self.monedas:
+			self.moneda+=1
+		return self.monedas.append(moneda)			
+
+
+	def pick (self, x, y):
+		if self.x == x and self.y == y:
+			for moneda in self.monedas
+
+
+
 
 
 
