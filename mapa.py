@@ -9,3 +9,8 @@ class Mapa(object):
 		self.robot=robot
 	def agregar_monedas(self, monedasas):
 		self.monedas.append(monedasas)	
+
+	def dibujar_mapa(self):
+		for i in altura:
+			for j in i:
+				
