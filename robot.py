@@ -19,7 +19,7 @@ class Robot(object):
 		else:
 			self.direccion = "UP"
 
-	def dibujar (self):
+	def dibujar_rotar (self):
 		if self.direccion == 'UP':
 			return "^"
 		elif self.direccion == 'RIGHT':
@@ -39,15 +39,13 @@ class Robot(object):
 	 	elif self.direccion == "v":
 			self.y += 1
 
-	def agregar_monedas(self, moneda):
-		for i in self.monedas:
-			self.moneda+=1
-		return self.monedas.append(moneda)			
-
-
+	
 	def pick (self, x, y):
-		if self.x == x and self.y == y:
-			for moneda in self.monedas
+		if self.contar_monedas_mapa(self.x, self.y) > 0:
+			self.monedas +=1
+			self.mapa.remover_moneda_mapa(x,y)
+			
+
 
 
 
