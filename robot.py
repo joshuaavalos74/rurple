@@ -43,8 +43,19 @@ class Robot(object):
 	def pick (self, x, y):
 		if self.contar_monedas_mapa(self.x, self.y) > 0:
 			self.monedas +=1
-			self.mapa.remover_moneda_mapa(x,y)
+			self.mapa.sacar_moneda_mapa(x,y)
 			
+
+
+
+
+
+
+
+		
+
+
+		
 
 
 

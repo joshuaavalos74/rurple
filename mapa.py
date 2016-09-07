@@ -21,5 +21,15 @@ class Mapa(object):
 					res= " "
 			res+= "\n"
 		return res
-							
-				
+	def contar_monedas_mapa(self, x, y):
+		mon=0
+		for moneda in self.monedas:
+			if moneda.x == x and moneda.y== y:
+				mon+=1
+		return mon		 
+
+			
+	def sacar_moneda(self, x, y):
+		if self.robot.x == x and self.robot.y == y:
+			self.x= -1
+			self.y= -1					
