@@ -10,34 +10,24 @@ class Robot(object):
 		self.mapa = mapa
 
 	def rotar (self):
-		if self.direccion == "UP":
-			self.direccion = "RIGHT"
-		elif self.direccion == "RIGHT":
-			self.direccion = "DOWN"
-		elif self.direccion == "DOWN":
-			self.direccion = "LEFT"
+		if self.direccion == "^":
+			self.direccion = ">"
+		elif self.direccion == ">":
+			self.direccion = "v"
+		elif self.direccion == "v":
+			self.direccion = "<"
 		else:
-			self.direccion = "UP"
+			self.direccion = "^"	
 
-	def dibujar_rotar (self):
-		if self.direccion == 'UP':
-			return "^"
-		elif self.direccion == 'RIGHT':
-			return ">"
-		elif self.direccion == 'LEFT':
-			return "<"
-		else:
-			return "v"		
-
-	 def mover (self):
+	def mover (self):
 	 	if self.direccion == ">":
-	 		self.x += 1
+	 		self.x+=1
 	 	elif self.direccion == "^":
-	 		self.y -= 1 
+	 		self.y-=1 
 	 	elif self.direccion == "<":
-	 		self.x -= 1
+	 		self.x-=1
 	 	elif self.direccion == "v":
-			self.y += 1
+	 		self.y+=1
 
 	
 	def pick (self, x, y):

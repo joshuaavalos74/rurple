@@ -6,4 +6,11 @@ def cargar_instrucciones(instruccion):
 		instruccioneses.append(h)
 	ins.close()	
 	return instruccioneses
-		
+def cargar_mapas(mapa):
+	mapasas=[]
+	j= open(mapa, "r")	
+	for linea in j:
+		o=list(linea.strip())
+		mapasas.append(o)
+	return mapasas
+	j.close()		
