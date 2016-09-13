@@ -34,7 +34,9 @@ class Robot(object):
 		if self.contar_monedas_mapa(self.x, self.y) > 0:
 			self.monedas +=1
 			self.mapa.sacar_moneda_mapa(x,y)
-			
+
+	def dibujar (self):
+		return self.direccion		
 
 
 
