@@ -3,7 +3,7 @@ class Robot(object):
 		self.x=x
 		self.y=y
 		self.monedas=0
-		self.direccion= "UP"
+		self.direccion= "^"
 		self.mapa= None
 
 	def asignar_mapa(self, mapa):

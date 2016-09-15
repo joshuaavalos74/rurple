@@ -14,9 +14,9 @@ class Mapa(object):
 		for y in (self.altura):
 			for x in (self.ancho):
 				if x == self.robot.x and y == self.robot.y:
-					res= self.robot.dibujar()
-				elif contar_monedas_mapa(x,y) > 0:
-					res = self.contar_monedas_mapa (x,y)
+					res= self.robot.dibujar(self)
+				elif contar_monedas_mapa(self,x,y) > 0:
+					res = self.contar_monedas_mapa (self,x,y)
 				else:
 					res= " "
 			res+= "\n"
